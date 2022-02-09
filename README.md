@@ -1,0 +1,1 @@
+Text generator for CoNDOR race reviews.
