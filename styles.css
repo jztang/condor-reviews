@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5d6063;
+  background-color: #eaedf0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 600px;
+  padding: 50px;
+  margin: 20px 0;
+}
+
+.container:last-of-type {
+  margin-top: 0;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"] {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 250px;
+  height: initial;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  text-align: right;
+  width: 120px;
+  margin: 7px 0 15px 0;
+  padding-right: 20px;
+}
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.legacy-form-row legend {
+  /* margin-bottom: 15px; */
+  width: 120px;
+  text-align: right;
+  padding-right: 20px;
+  float: left;
+}
+
+.legacy-form-row .radio-label {
+  display: block;
+  font-size: 14px;
+  padding: 0 25px 0 10px;
+}
+
+.legacy-form-row input[type="radio"],
+.legacy-form-row input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type="radio"],
+.legacy-form-row input[type="checkbox"] {
+  float: left;
+  /* margin-top: 50px; */
+}
+
+.form-row select {
+  width: 250px;
+  /* height: initial; */
+  padding: 5px;
+  font-size: 14px;
+  /* -webkit-appearance: none; */
+}
+
+.form-row button {
+  /* font-size: 16px; */
+  font-weight: bold;
+  /* margin: 0 auto; */
+  margin: 0 15px;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+.form-row:last-of-type {
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.generated-container {
+  display: none;
+}
+
+.generated-text {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  padding: 30px;
+  margin-bottom: 20px;
+}

@@ -8,5 +8,60 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <form class="container input-form">
+      <div class="form-row">
+        <label for="racer1">Racer 1</label>
+        <input type="text" id="racer1" name="racer1" required />
+      </div>
+      <div class="form-row">
+        <label for="racer2">Racer 2</label>
+        <input type="text" id="racer2" name="racer2" required />
+      </div>
+      <fieldset class="legacy-form-row">
+        <legend>Race under review</legend>
+        <input type="radio" id="race1" name="race-num" value="1" required />
+        <label for="race1" class="radio-label">Race 1</label>
+        <input type="radio" id="race2" name="race-num" value="2" />
+        <label for="race2" class="radio-label">Race 2</label>
+        <input type="radio" id="race3" name="race-num" value="3" />
+        <label for="race3" class="radio-label">Race 3</label>
+      </fieldset>
+      <fieldset class="legacy-form-row">
+        <legend>Original race winner</legend>
+        <input type="radio" id="winner1" name="race-winner" value="1" required />
+        <label for="winner1" class="radio-label">Racer 1</label>
+        <input type="radio" id="winner2" name="race-winner" value="2" />
+        <label for="winner2" class="radio-label">Racer 2</label>
+      </fieldset>
+      <div class="form-row">
+        <label for="orig-result">Original result</label>
+        <select id="orig-result" name="orig-result" required>
+          <option value="3-0">3-0</option>
+          <option value="2-1">2-1</option>
+          <option value="1-2">1-2</option>
+          <option value="0-3">0-3</option>
+        </select>
+      </div>
+      <fieldset class="legacy-form-row">
+        <legend>Overturn</legend>
+        <input type="checkbox" id="overturn" name="overturn" value="yes" />
+        <label for="overturn" class="radio-label">Yes</label>
+      </fieldset>
+      <div class="form-row">
+        <button class="generate-btn">Generate</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+    </form>
+    <form class="container generated-container">
+      <p class="generated-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo libero, natus numquam cum
+        exercitationem repellendus voluptas a nisi, iure officia placeat? Blanditiis esse veniam
+        nesciunt cumque assumenda itaque beatae impedit.
+      </p>
+      <div class="form-row">
+        <button class="copy-btn">Copy</button>
+      </div>
+    </form>
+  </body>
 </html>
